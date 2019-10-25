@@ -10,6 +10,9 @@ import './App.css';
 import './App.sass';
 
 function App() {
+  function replaceNbsp(text) {
+    return text.replace(/\u00a0/g, ' ');
+  }
   return (
     <>
       <nav
@@ -89,9 +92,9 @@ function App() {
         <div className="columns is-desktop">
           {productsFirstRow.map(item => {
             return (
-              <div key={item.title} className="column">
-                <img src={item.imgUrl} alt={item.title} />
-                <h2>{item.title}</h2>
+              <div key={`${item.title}`} className="column">
+                <img src={item.imgUrl} alt={`${item.title}`} />
+                <h2>{`${replaceNbsp(item.title)}`}</h2>
                 <p>{item.description}</p>
               </div>
             );
@@ -100,9 +103,9 @@ function App() {
         <div className="columns is-desktop">
           {productsSecondRow.map(item => {
             return (
-              <div key={item.title} className="column">
-                <img src={item.imgUrl} alt={item.title} />
-                <h2>{item.title}</h2>
+              <div key={`${item.title}`} className="column">
+                <img src={item.imgUrl} alt={`${item.title}`} />
+                <h2>{`${replaceNbsp(item.title)}`}</h2>
                 <p>{item.description}</p>
               </div>
             );
@@ -111,9 +114,9 @@ function App() {
         <div className="columns is-desktop">
           {productsThirdRow.map(item => {
             return (
-              <div key={item.title} className="column">
-                <img src={item.imgUrl} alt={item.title} />
-                <h2>{item.title}</h2>
+              <div key={`${item.title}`} className="column">
+                <img src={item.imgUrl} alt={`${item.title}`} />
+                <h2>{`${replaceNbsp(item.title)}`}</h2>
                 <p>{item.description}</p>
               </div>
             );
