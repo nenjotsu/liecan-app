@@ -128,8 +128,9 @@ function App() {
           <p>
             <strong>Liecan Trading ©2019</strong>
           </p>
-          <p>Block 100 Lot 7 Northville 2B, Caloocan City</p>
-          <h5>Tel. No.: (02) 507-2276</h5>
+          <p>Address: Block 100 Lot 7 Northville, Caloocan City</p>
+          <h5>Telephone: (02)504-8663 / (02)507-2276</h5>
+          <h5>Mobile: 0926-392-0842</h5>
         </div>
       </footer>
     </>
