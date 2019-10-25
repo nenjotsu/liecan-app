@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 60vmin;
 }
 
 .App-header {
@@ -15,8 +15,20 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  background: url(./images/ant-rozetsky-SLIFI67jv5k-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+#products {
+  padding: 5em;
+}
+
+h2 {
+  font-size: 2em !important;
 }
